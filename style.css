@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto', sans-serif; ;
+    background-image:url(50-Beautiful-and-Minimalist-Presentation-Backgrounds-018.jpg);
+    background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    color:white;
+}
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+
+h1::first-letter{
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+h1 span::first-letter{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+form{
+    margin-bottom: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:14px;
+   
+}
+input{
+    padding:5px;
+    font-size: 16px;
+    background-color: transparent;
+    color:white;
+    border:1px solid white;
+    box-shadow: 0px 0px 25px white;
+    height:40px;
+   
+    
+}
+form button{
+    align-items: center;
+   border-radius: 4px;
+   height:30px;
+   width:90px;
+   box-shadow: 0px 0px 25px white;
+   border-width: 0;
+   color: #36395A;
+   /* display: inline-flex; */
+   transition: box-shadow .15s,transform .15s;
+   position: relative;
+  
+}
+form button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #f1dbaa 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+input::placeholder{
+    font-size: 15px;
+    color:#F5FFFA;
+}
+
+form button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+.errorMsg{
+    margin-bottom:1rem;
+    color:red;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+.scoreBoard-container{
+    width: 80%;
+    max-width: 900px;
+}
+.scoreboard{
+    background-color:lavender blush;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px white
+}
+.scoreboard-btn{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.scoreboard-btn button{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow:  0px 0px 15px white;
+    font-weight: 700;
+    color:white;
+}
+.scoreboard-btn button:focus {
+    box-shadow: #ebdc99 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #e7d999 0 -3px 0 inset;
+}
+.scoreboard-btn button:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #f1dbaa 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.scoreboard-btn button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
